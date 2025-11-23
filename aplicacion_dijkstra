@@ -1,0 +1,5 @@
+Aplicación de los montículos en el algoritmo de Dijkstra
+El algoritmo de Dijkstra encuentra el camino más corto desde un nodo origen a todos los demás en un grafo con pesos no negativos.
+En cada iteración, Dijkstra debe seleccionar el nodo no visitado con la distancia más pequeña conocida. Si se usa una lista simple, encontrar ese mínimo toma O(n) tiempo, lo que hace al algoritmo O(n²).
+Al usar un montículo mínimo, la extracción del mínimo se hace en O(log n), y las actualizaciones de distancia, disminución de clave, también pueden hacerse eficientemente. Esto reduce la complejidad total a O((V + E) log V), donde V es el número de vértices y E el de aristas.
+En resumen, el montículo permite que Dijkstra sea eficiente, especialmente en grafos grandes y dispersos.
